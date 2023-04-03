@@ -25,29 +25,37 @@
             Here are my projects!
             <br>
             These are both personal projects that I am currently working on and competitions/events that I have participated in.
-
+            <br>
+            <button class="downBtn" onclick="downFunction()" title="Go to projects"><i class="fa-solid fa-circle-down"></i></button>
+            
         </p>
         
-        <div class="project">
+        <div class="project" id="project">
             <h2>This Website!</h2>
-            <p>
-                
-            </p>
+            <ul>
+                <li>Learned basic html, css, and javascript and used them to create this site</li>
+                <li>Designed and built a fully functioning website</li>
+                <li>Included mobile compatibility</li>
+            </ul>
         </div>
 
-        <div class="project">
-            <h2>UACS Coding Competition</h2>
-            <p>
-
-
-            </p>
+        <div class="project" id="secondProject">
+            <h2>UAPC Programming Contest</h2>
+            <ul>
+                <li>Competed with one other teammate to solve a set of programming puzzles.</li>
+                <li>Flexibly switched between C++ and Python depending on what each puzzle demanded</li>
+            </ul>
         </div>
 
         <div class="project">
             <h2>HackED Beta</h2>
-            <p>
-
-            </p>
+            <ul>
+                <li>Lead a team of 5 members to create a question generating study helper website</li>
+                <li>This program took an input of simple statements and transformed them into questions.
+                     Meant to be used by students to create study questions out of their notes</li>
+                <li>Worked on backend programming using Python. Learned basic usage of Flask within the strict 24 hour time limit</li>
+                
+            </ul>
         </div>
 
         <div class="iconbar">
@@ -56,6 +64,10 @@
             <a href="https://www.linkedin.com/in/timy13/" target="_blank" class ="linkedin"><i class="fa-brands fa-linkedin"></i></a>
 
         </div>
+
+        <button class="topBtn" onclick="topFunction()" title="Back to top"><i class="fa-solid fa-circle-up"></i></button>
+
+        <script src="../app.js"></script>
 
     </body>
 

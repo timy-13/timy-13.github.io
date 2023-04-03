@@ -3,5 +3,45 @@
     text-align: center;
     padding: 20px;
     border: 20px;
-    height: 250px;
+    height: 100%;
+    margin-bottom: 3%;
+}
+
+p {
+    height:500px;
+}
+
+ul {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: left;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+li {
+    padding: 0.2%;
+}
+
+.downBtn {
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 20%;
+}
+
+.downBtn:hover {
+    color: blue;
+}
+
+.topBtn {
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.topBtn:hover {
+    color: blue;
 }
