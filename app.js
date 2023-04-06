@@ -1,15 +1,24 @@
 function myFunction() {
     var x = document.getElementById("myNavbar");
-    if (x.className === "navbar") {
+    if (x.className === "navbarRight") {
       x.className += " responsive";
+      var navbar = document.getElementById("myNavbar")
+      navbar.style.width = navbar.style.width === "60%" ? '0%' : '60%';
     } else {
-      x.className = "navbar";
+      x.style.width = x.style.width === "60%" ? '0%' : '60%';
+      x.className = "navbarRight";
     }
 }
 
 function toggleNav() {
   var navbar = document.getElementById("myNavbar");
-  navbar.style.width = navbar.style.width === "250px" ? '0' : '250px';
+
+  if (navbar.style.width === "0%") {
+        navbar.style.width = "60%";
+      } else {
+        navbar.style.width = "0%";
+      }
+  
 }
 
 var prevScrollpos = window.pageYOffset;
