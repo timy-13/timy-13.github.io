@@ -5,29 +5,41 @@
         <meta name="viewport" content ="width=device-width, inital-scale=1.0">
         <title>Tim Yoon Portfolio</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/navbar.css">
         <script src="https://kit.fontawesome.com/8f070b90d9.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <header class="navheader">
+            <nav class="navbar" id="myNavbar">
+                <div>
+                    <a class="active" href="#home"><i class="fa-solid fa-t"></i><i class="fa-solid fa-y"></i></a>
+                </div>
+                <div class="navbarRight">              
+                        <a href="#contact">Contact</a>
+                        <a href="#project">Projects</a>
+                        <a href="#about">About</a>
+                       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa-solid fa-bars"></i>
+                        </a> 
+                    
+                </div>
+            </nav>
+        </header>
         
-        <div class="navbar" id="myNavbar">
-            <a class="active" href="../index.html"><i class="fa-solid fa-t"></i><i class="fa-solid fa-y"></i></a>
-            <a href="../html/contact.html">Contact</a>
-            <a href="../html/projects.html">Projects</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-        </div>
 
-        <div class="main">
-            <h1>Tim <br>
-                &emsp; Yoon
+        <div class="main" id="home">
+            <h1>
+                <span class="name" style="color:rgb(0, 140, 255)">T</span><span class="name" style="color:white">im</span>
+                <br>
+                &emsp; <span class="name" style="color:rgb(0, 140, 255)">Y</span><span class="name" style="color:white">oon</span>
+
             </h1>
             <p class="description">
                 Software Engineering Student
             </p>
         </div>
 
-        <div class="about">
+        <div class="about" id="about">
             <div class="aboutMain">
                 <h1>About Me</h1>
                 <p>
@@ -37,25 +49,78 @@
             </div>
             
             <div class="skills">
-                <div class="skill">Python</div>
-                <div class="skill">C++</div>
-                <div class="skill">Matlab</div>
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">Javascript</div>
-                <div class="skill">Terminal</div>
-                <div class="skill">Github</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">C++</div>
+                <div class="skills__skill">Matlab</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Javascript</div>
+                <div class="skills__skill">Terminal</div>
+                <div class="skills__skill">Github</div>
             </div>
         </div>
-        
+        <div class="projects" id="project">
+            <h1>Projects</h1>
+            <p>
+                Here are my projects!
+                <br>
+                These are both personal projects that I am currently working on and competitions/events that I have participated in.
+                <br>
+                
+            </p>
+            <div class="projects__project">
+                <h2>This Website!</h2>
+                <ul>
+                    <li>Learned basic html, css, and javascript and used them to create this site</li>
+                    <li>Designed and built a fully functioning website</li>
+                    <li>Included mobile compatibility</li>
+                </ul>
+            </div>
 
+            <div class="projects__project">
+                <h2>UAPC Programming Contest</h2>
+                <ul>
+                    <li>Competed with one other teammate to solve a set of programming puzzles.</li>
+                    <li>Flexibly switched between C++ and Python depending on what each puzzle demanded</li>
+                </ul>
+            </div>
+
+            <div class="projects__project">
+                <h2>HackED Beta</h2>
+                <ul>
+                    <li>Lead a team of 5 members to create a question generating study helper website</li>
+                    <li>This program took an input of simple statements and transformed them into questions.
+                        Meant to be used by students to create study questions out of their notes</li>
+                    <li>Worked on backend programming using Python. Learned basic usage of Flask within the strict 24 hour time limit</li>
+                    
+                </ul>
+            </div>
+        
+        </div>
+        <div class="contact" id="contact">
+            <h1>Contact Me</h1>
+            <p>
+                I am currently searching for a software internship/coop opportunity.<br>
+                Feel free to contact me at any of the below methods!
+            </p>
+
+            <div class="contacts">
+                <ul>
+                    <li>Email me at: tyoon@ualberta.ca</li>
+                    <li>Text or phone me at: +1 403-617-3350</li>
+                    <li>Check out my linkedin: <a href="https://www.linkedin.com/in/timy13/" target="_blank">timy13</a></li>
+                    <li>Visit my github: <a href="https://github.com/timy-13" target="_blank">timy-13</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
         <div class="iconbar">
             <a href="https://github.com/timy-13" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
             <a href="mailto: tyoon@ualberta.ca" target="_blank" class="mail"><i class="fa-regular fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/timy13/" target="_blank" class ="linkedin"><i class="fa-brands fa-linkedin"></i></a>
 
         </div>
-
         
         <script src="app.js"></script>
     </body>
