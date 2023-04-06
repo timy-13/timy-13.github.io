@@ -66,19 +66,9 @@
     }
     .navbar.responsive .icon {
       position: absolute;
-      display: block;
+      display:block;
       right: 0;
       top: 0;
-    }
-
-    .navbar.responsive .navbarRight {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .navbar.responsive .pages {
-        position: relative;
-        top: 15%;
     }
 
     .navbar.responsive a {
@@ -87,5 +77,10 @@
         display: flex;
         align-items: center;
         text-align: left;
+    }
+
+    .navbar.responsive .pages {
+        display: grid;
+        
     }
 }
