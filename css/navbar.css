@@ -1,11 +1,12 @@
 .navheader {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     margin-left: -20%;
     top: 0;
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.3)
 }
 
 .navbar {
@@ -19,10 +20,16 @@
 }
 
 .navbarRight {
-    position: relative;
+    float: right;
+    position: inherit;
     display: flex;
-    overflow: hidden;
+    justify-content: flex-end;
     width: 100%;
+}
+
+.navbarRight .pages {
+    float: right;
+    display: flex;
 }
 
 .navbar a {
@@ -33,7 +40,7 @@
     text-align: center;
     padding: 20px 25px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -80,6 +87,7 @@
 
     .navbarRight.responsive .pages {
         position: relative;
+        display: block;
         top: 25%;
         width: 100%;
         text-align: center;
