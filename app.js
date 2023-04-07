@@ -27,7 +27,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navheader").style.top = "0";
   } else {
-    document.getElementById("navheader").style.top = "-50px";
+    document.getElementById("navheader").style.top = "-4rem";
   }
   prevScrollpos = currentScrollPos;
 }

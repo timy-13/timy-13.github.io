@@ -38,7 +38,7 @@
     align-items: center;
     color: black;
     text-align: center;
-    padding: 20px 25px;
+    padding: 1.7rem 2.3rem;
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
@@ -58,7 +58,7 @@
     color: white;
 }
 
-.navbar .icon {
+.navbar .ham {
     display: none;
     color: rgb(0, 140, 255);
 }
@@ -66,7 +66,7 @@
 @media screen and (max-width: 700px) {
     .navbar a {display: none;}
     .navbar a.active {display: flex; float: left;}
-    .navbar a.icon {
+    .navbar a.ham {
       float: right;
       display: block;
     }   
@@ -94,7 +94,7 @@
         margin-top: 20%;
     }
 
-    .navbarRight.responsive .icon {
+    .navbarRight.responsive .ham {
       position: absolute;
       display:block;
       right: 0;
