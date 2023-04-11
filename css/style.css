@@ -17,6 +17,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20%;
     color: white;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -57,9 +58,25 @@ p {
     grid-column-start: 1;
 }
 
+.resume_button {
+    margin-top: 75%;
+}
+
 .resume {
     grid-column: 2;
-    margin-top: 60%;
+    margin: 1rem;
+    color: var(--blue);
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.resume:hover {
+    background-color: rgba(74, 103, 233, 0.2);
 }
 
 .about {
