@@ -1,3 +1,8 @@
+:root {
+    --darkgray: #1d1d1d;
+    --blue: rgb(0, 140, 255);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +12,7 @@ html{
 }
 
 body {
-    background-color: #1d1d1d;
+    background-color: var(--darkgray);
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20%;
@@ -30,13 +35,31 @@ p {
     font-size: 20px;
 }
 
-.main {
+.home {
     height: 95vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10rem;
+}
+
+.main {
+    margin-top: 15%;
 }
 
 .name {
     margin: 0%;
     display: inline-block;
+    grid-column-start: 1;
+
+}
+
+.description {
+    grid-column-start: 1;
+}
+
+.resume {
+    grid-column: 2;
+    margin-top: 60%;
 }
 
 .about {
@@ -94,22 +117,41 @@ p {
 
 .iconbar{
     position: fixed;
-    top: 70%;
+    top: 65%;
     left: 3%;
     font-size: larger;
 }
 
 .iconbar a {
     display: block;
-    padding: 18px;
+    padding: 1.8rem;
     transition: all 0.3s ease;
 }
 
 .icon {
-    color:rgb(0, 140, 255);
+    color: var(--blue);
     font-size: 1.3rem;
 }
 
 .icon:hover {
     color: white;
+}
+
+#target:hover {
+    margin-top: -0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--darkgray); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(151, 150, 150, 0.329);
+    border: 3px;
+    border-radius: 10px;
 }

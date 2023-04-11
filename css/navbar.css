@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     position: fixed;
-    width: 100%;
-    margin-left: -20%;
+    width: 99%;
+    margin-left: -19%;
     top: 0;
     transition: 0.3s;
     background: rgba(0, 0, 0, 0.3)
@@ -81,8 +81,8 @@
         z-index: 1;
         top: 0;
         right: 0;
-        overflow-x: hidden;
         transition: 0.5s;
+        overflow: hidden;
     }
 
     .navbarRight.responsive .pages {
