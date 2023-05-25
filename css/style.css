@@ -1,6 +1,10 @@
 :root {
-    --darkgray: #1d1d1d;
-    --blue: rgb(0, 140, 255);
+    --black: #000;
+    --indigo: #1F2833;
+    --blue: #66fcf1;
+    --gray: #C5C6C7;
+    --white: #ffffff;
+    --oldblue: rgb(0, 140, 255);
 }
 
 * {
@@ -12,11 +16,12 @@ html{
 }
 
 body {
-    background-color: var(--darkgray);
+    background-color: var(--black);
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20%;
-    color: white;
+    margin-right: 20%;
+    color: var(--white);
     overflow-x: hidden;
 }
 
@@ -34,6 +39,7 @@ p {
     margin-right: 30%;
     margin-left: 3%;
     font-size: 20px;
+    color: var(--gray);
 }
 
 .home {
@@ -47,11 +53,12 @@ p {
     margin-top: 15%;
 }
 
+
+
 .name {
     margin: 0%;
     display: inline-block;
     grid-column-start: 1;
-
 }
 
 .description {
@@ -65,7 +72,7 @@ p {
 .resume {
     grid-column: 2;
     margin: 1rem;
-    color: var(--blue);
+    color: var(--white);
     background-color: transparent;
     border: 2px solid;
     border-radius: 4px;
@@ -73,10 +80,12 @@ p {
     cursor: pointer;
     text-decoration: none;
     font-size: x-large;
+    border-color: var(--blue);
 }
 
 .resume:hover {
-    background-color: rgba(74, 103, 233, 0.2);
+    /*background-color: rgba(102, 252, 241, 0.2); */
+    color: var(--blue);
 }
 
 .about {
@@ -110,6 +119,7 @@ p {
 
 .projects {
     height: auto;
+    margin-left: 15%;
 }
 
 .projects__project {
@@ -117,7 +127,7 @@ p {
     border: 20px;
     height: 100%;
     margin-bottom: 3%;
-    margin-right: 50%;
+    margin-right: 35%;
 }
 
 .contact {
